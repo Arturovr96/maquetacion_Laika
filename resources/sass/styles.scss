@@ -1,0 +1,707 @@
+$primary-color:#603e85;
+$margen-header: 130px;
+$padding_search: 5px 20px;
+*{  margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+// INICIO ESTILOS MODAL
+.modal-content2{
+    border-radius: 20px;
+    background-color: white;
+    -webkit-transform:translateX(25%);
+    width: 75%;
+    padding: 50px 20px 20px 20px;
+    font-size: 15px;
+}
+.titulo_modal{
+    text-align: center;
+}
+.contenido_modal{
+    width: 100%;
+    padding-top: 40px;
+}
+.contenido_modal .input_modal{
+    width: 100%;
+    background-color: #f6f7fa;
+    border:none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+}
+.contenido_modal a{
+    text-decoration: none;
+}
+.contenido_modal label{
+    color: $primary-color;
+}
+.recuerdame{
+    color: $primary-color;
+    text-align: right;
+    font-weight: 5px;
+}
+.terminos{
+    display: flex;
+}
+.label{
+    margin-top: 10px;
+}
+.label label{
+    margin-bottom: 10px;
+}
+.button_modal1, .button_modal2{
+    display: flex;
+    justify-content: center;
+}
+.button_modal1:hover, .button_modal2:hover{
+    cursor: pointer;
+}
+.button_modal1{
+    margin: 20px 0 10px 0;
+}
+.button_modal1 button{
+    width: 100%;
+    padding: 15px 0px;
+    background-color: $primary-color;
+    color: white;
+    border-radius: 10px;
+    border:none;
+}
+.button_modal2 button{
+    width: 100%;
+    padding: 15px 0px;
+    background-color: transparent;
+    color: $primary-color;
+    border-radius: 10px;
+    border: solid 1px $primary-color;
+}
+// FIN ESTILOS MODAL 
+.header_container2{display: none;}
+.section_member{display: none;}
+.foot{display: none;}
+.box{
+    background: $primary-color;
+    display: flex;
+    color: white;
+    width: 100%;
+    padding: 7px $margen-header 2px $margen-header;
+}
+.box .info{
+    width: 60%;
+    font-size: 14px;
+}
+.box .info #border{
+    margin: 0px 10px;
+    padding: 0px 11px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+.box .redes{
+    width: 40%;
+    text-align: right;
+    font-size: 14px;
+}
+.redes #border{
+    border-right: solid 1px white;
+    margin: 0 10px 0 10px;
+    padding: 0 11px 0 11px;
+}
+.redes a{
+    text-decoration: none;
+    color: white;
+}
+.redes a:hover{
+    color: white;
+}
+.redes a img{
+    margin-left: 10px;
+    font-size: 15px;
+}
+.box2{
+    background: $primary-color;
+    display: flex;
+    color: white;
+    width: 100%;
+    padding: 5px $margen-header 7px $margen-header;
+}
+.box2 .logo{
+    width: 7%;
+}
+.buscador{
+    width: 73%;
+    display: flex;
+    align-items: center;
+}
+.input_search{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-left: 15px;
+    padding: $padding_search;
+    width:80%;
+    color: rgb(170, 170, 170);
+}
+::placeholder{
+    color: rgb(170, 170, 170);
+    font-weight: bold;
+    font-size: 14px;;
+}
+.box2 .buscador button{
+    margin-left: 15px;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+.box2 .buscador button img{
+    width: 30px;
+    height: 25px;
+}
+.box2 .cuenta{
+    width: 20%;
+}
+.box2 .cuenta .icon_user img{
+    width: 30px;
+    height: 30px;
+}
+.box2 .cuenta .icon_user button{
+    background-color: #472f62;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+}
+.box2 .cuenta{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.box2 .cuenta .icon_shopping-cart{
+    background: #9d7dc2;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    padding: 3px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin-left: 20px;
+}
+.box2 .cuenta .icon_shopping-cart img{
+    width: 25px;
+}
+.header_laika_member{
+    background-color: white;
+    padding: 3px $margen-header;
+    box-shadow: 0px 0px 15px 0px rgba(74, 33, 107, 0.75);
+    display: flex;
+    justify-content: space-between;
+}
+.header_laika_member .member{
+    display: flex;
+}
+.header_laika_member .opciones button{
+    padding: 7px 10px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    color: #78569d;
+    font-size: 14px;
+}
+.header_laika_member .opciones button:hover{
+    background: rgb(218, 218, 218);
+}
+.header_laika_member .member img{
+    align-self: center;
+}
+.main{
+    padding: 140px $margen-header 0 $margen-header;
+    width: 100%;
+    z-index: 0;
+}
+.main h4{
+    color: $primary-color;
+    text-align: left;
+}
+.carrusel{
+    margin: 10px 0;
+}
+.categorias{
+    text-align: center;
+}
+.boton_categoria{
+    display: flex;
+}
+.boton_categoria button{
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 0;
+    border-radius: 7px;
+    border: solid 1px $primary-color;
+    color: $primary-color;
+    background-color: transparent;
+    font-weight: bold;
+}
+.img_destacado{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.img_destacado img{
+    width: 70%;
+    height: 70%;
+    border-radius: 100%;
+    box-shadow: 0px 0px 7px 3px rgba(179, 179, 179, 0.75);
+}
+.marcas1, .marcas2, .marcas3, .marcas4, .marcas5, .marcas6{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    width: 15%;
+    height: 100%;
+}
+.footer{
+    color: #725f88;
+    width: 100%;
+    padding: 20px $margen-header;
+}
+.linea1{
+    width: 100%;
+    display: flex;
+}
+.footer_logo{
+    width: 20%;
+    text-align: center;
+    padding-right: 20px;
+}
+.footer_logo p{
+    padding-right: 15px;
+}
+.acercade, .links, .informacion{
+    width: 20%;
+    padding: 0 20px;
+}
+.suscribir{
+    width: 20%;
+    padding-left: 20px;
+}
+.acercade .titulo, .links .titulo, .informacion .titulo, .suscribir .titulo{
+    color: $primary-color;
+    font-size: 16px;
+    font-weight: bold; 
+}
+.acercade p, .links p{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.suscribir p{
+    font-size: 10px;
+    font-style: italic;
+    margin-bottom: 4px;
+}
+.suscribir .div_boton{
+    display: flex;
+    width: 100%;
+}
+.suscribir .div_boton button{
+    width: 20%;
+    border:none;
+    border-radius: 7px;
+    background-color: $primary-color;
+    color: white;
+    margin-left: 5px;
+}
+.suscribir .input_inscripcion{
+    border: solid 1px $primary-color;
+    width: 90%;
+    border-radius: 7px;
+    padding: 3px 10px 5px 10px;
+    margin-bottom: 4px;
+}
+.suscribir .input_inscripcion::placeholder {
+    color: #725f88;
+    font-size: 12px;
+}
+.informacion p{
+    font-size: 13px;
+    margin-bottom: 10px;
+    -ms-word-break: break-all;
+    word-break: break-all;
+
+    // Non standard for webkit
+    word-break: break-word;
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+.footer2{
+    background-color: #f0f1f3;
+    padding: 10px $margen-header;
+    display: flex;
+}
+.linea2{
+    display: flex;
+    width: 100%;
+}
+.pago_seguro{
+    width: 30%;
+}
+.pago_seguro h6{
+    font-size: 13px;
+    font-weight: bold;
+}
+.pago_seguro b{
+    color: #00d95f;
+}
+.pago_seguro p{
+    font-size: 10px;
+    color: #a7b5cb;
+    margin-bottom: 2px;
+}
+.metodos_pago{
+    display: flex;
+}
+.metodos_pago img{
+    width: 40px;
+    height: 25px;
+    border: solid 1px #a7b5cb;
+    border-radius: 2px;
+    margin-right: 2px;
+}
+.proteccion{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.proteccion div img{
+    width: 25px;
+    height: 25px;
+}
+.proteccion div span{
+    font-size: 13px;
+}
+.aplicacion{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.aplicacion div img{
+    width: 130px;
+    height: 40px;
+}
+.div_productos h4{
+    margin-bottom: 20px;
+}
+.productos{
+    -webkit-transform:translateX(12%);
+    box-shadow: 10px 10px 30px 0px rgba(158, 158, 158, 0.75);
+    width: 80%;
+
+}
+.productos .img_producto{
+    color: black;
+}
+.productos a{
+    text-decoration: none;
+}
+.productos .producto_nombre{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.precio, .precio_member{
+    font-size: 20px;
+}
+.precio_member{
+    color: #bc2f10;
+    display: flex;
+    width: 100%;
+}
+.precio_member img{
+    width: 120px;
+    height: 35px;
+    padding: 0 10px 5px 10px;
+}
+.card_boton{
+    background-color: $primary-color;
+    color: white;
+    text-align: center;
+}
+.contenedor_producto{
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+}
+.contenedor_producto .imagen{
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor_producto .imagen img{
+    width: 60%;
+}
+.contenedor_producto .contenido{
+    width: 50%;
+}
+.contenido .info_producto{
+    width: 100%;
+    display: flex;
+}
+.datos_producto p{
+    margin-top: 10px;
+    margin-bottom: 3px;
+    font-size: 12px;
+}
+.info_producto .datos_producto{
+    width: 60%;
+}
+.info_producto .datos_producto .titulo{
+    color: #5a595c;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.info_producto .datos_producto .marca{
+    font-size: 14px;
+    color: #3e82f7;
+    margin-bottom: 3px;
+}
+.calificacion{
+    font-size: 14px;
+}
+.precio_normal p, .precio_mebresia p{
+    font-size: 12px;
+    color: #5a595c;
+    margin-bottom: 3px;
+}
+.precio_mebresia div{
+    display: flex;
+}
+.precio_mebresia div h3{
+    margin-right: 10px;
+    color: #bc2f10;
+}
+.referencia{
+    margin-top: 3px;
+}
+.referencia p {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+.referencia button{
+    background-color: $primary-color;
+    color: white;
+    padding: 10px;
+    border:none;
+    border-radius: 5px;
+    font-size: 11px;
+}
+.info_producto .cantidad_producto{
+    width: 40%;
+}
+.descripcion_producto{
+    padding: 40px 0;
+    align-items: center;
+    justify-content: center;
+}
+.titulo_descripcion{
+    display: flex;
+}
+.titulo_descripcion p{
+    margin-left: 20px;
+}
+.titulo_descripcion img{
+    width: 20px;
+    height:20px;
+}
+@media screen and (max-width:1400px){
+}
+@media screen and (max-width:1293px){
+    $margen-header: 20px;
+    .box{display: none;}
+    .header_container{display: none;}
+    .section_member{display: none;}
+    .aplicacion{display: none;}
+    .main{
+        padding: 140px $margen-header 0 $margen-header;
+    }
+    .header_container2 {
+    background: $primary-color;
+    display: block;
+    }
+    .contenedor{
+        padding: 0 $margen-header;
+    }
+    .primera_fila{
+    padding: 7px 0 5px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .primera_fila .menu {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    }
+    .primera_fila .menu i{
+        color: white;
+        font-size: 25px;
+    }
+    .primera_fila .logo_laika {
+    width: 20%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .primera_fila .logo_laika img{
+        width: 45px;
+        height: 40px;
+    }
+    .primera_fila .ciudades_shop {
+    width: 40%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+
+    align-items: center;
+    }
+    .primera_fila .ciudades_shop button{
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 12px;
+    }
+    .primera_fila .ciudades_shop div i {
+        color: white;
+        margin-left: 10px;
+    }
+    .primera_fila .ciudades_shop button img{
+        width: 20px;
+        height: 15px;
+    }
+    .primera_fila .ciudades_shop .logo_cart{
+        background: #9d7dc2;
+        width: 30px;
+        height: 30px;
+        padding: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        margin-left: 10px;
+    }
+    .primera_fila .ciudades_shop .logo_cart img{
+        width: 20px;
+    }
+    .segunda_fila{
+    padding: 5px 0 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .input_search{
+        width: 100%;
+        margin-left: 0;
+    }
+    .header_laika_member{
+        padding: 3px $margen-header;
+    }
+    .pago_seguro, .proteccion{
+        width: 50%;
+    }
+    .footer{
+        padding: 20px $margen-header;
+    }
+    .footer2{
+        padding: 10px $margen-header;
+    }
+}
+@media screen and (max-width:920px){
+    $margen-header: 20px;
+    .header_laika_member{display: none;}
+    .linea1{
+        display: none;
+    }
+    .header_container2 {
+        background: $primary-color;
+    }
+    .contenedor{
+        padding: 0px $margen-header;
+    }
+    .main{
+        width: 100%;
+        padding: 110px $margen-header 0 $margen-header;
+    }
+    .section_member{display: block;}
+    .section_member .activo{
+        background-color: $primary-color;
+        color: white;
+    }
+    
+    .foot{
+        width: 100%;
+        display: inline-block;
+    }
+    .footer_logo{
+        width: 100%;
+        justify-content: center;
+    }
+    .footer_logo p{
+        padding-left: 5px;
+    }
+    .suscribir{
+        width: 100%;
+    }.div_boton .input_inscripcion{
+        width: 98%;
+    }
+    .div_boton button{
+        width: 2%;
+    }
+}
+@media screen and (max-width:650px){ 
+    .linea2{
+        display: block;
+    }
+    .pago_seguro, .proteccion{
+        width: 100%;
+    }
+    .proteccion div{
+        padding: 15px 0;
+    }
+}  
+@media screen and (max-width:349px){   
+    .primera_fila .menu{
+        width: 30%;
+    }
+    .primera_fila .logo_laika{
+        width: 30%;
+    }
+    .primera_fila .ciudades_shop{
+        width: 40%;
+    }
+    .primera_fila .ciudades_shop .logo_cart{
+        margin-left: 5px;
+    }
+    .main{
+        padding: 60px $margen-header 0 $margen-header;
+    }
+    .carrusel{
+        margin: 3px 0;
+    }
+}
