@@ -16,7 +16,7 @@
         </div>
         <div class="box2">
             <div class="logo">
-                <img src="img/LaikaMascotas.svg" alt="Logo laika">
+                <a href="{{URL::to('/')}}"><img src="img/LaikaMascotas.svg" alt="Logo laika"></a>
             </div>
             <div class="buscador">
                 <input type="text" placeholder="Encuentra lo mejor para tu mascota" class="input_search">
@@ -47,7 +47,9 @@
                 <div class="menu">
                     <i class="fa fa-bars"></i>
                 </div>
-                <div class="logo_laika"><img src="img/LaikaMascotas.svg" alt=""></div>
+                <div class="logo_laika">
+                    <a href="{{URL::to('/')}}"><img src="img/LaikaMascotas.svg" alt=""></a>
+                </div>
                 <div class="ciudades_shop">
                     <button>
                         <img src="img/logo_colombia.png" alt="">
