@@ -1,7 +1,8 @@
 <p align="center">
   <img src="https://laika.com.co/assets/LAIKA.png" />
 </p>
-#Maquetación Laika Mascotas
+
+## Maquetación Laika Mascotas
 
 Se realizó la prueba técnica **FrontEnd** la en el documeto adjunto enviado por correo se indicaba lo siguiente:
 
