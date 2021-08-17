@@ -18,11 +18,15 @@ Para la prueba se hizo uso de Laravel  <span style="color:#3e82f7;">**7.30.4**</
 
 Descargar el proyecto e instalar los paquetes de laravel con composer usando la linea de comando:
 
-`composer install`
+`$ composer install`
 
-Para los productos se creo inicialmente un controlador y la migracion, luego de definir los campos en la migración se creo un factory para poder generar datos aleatorios. Primero creamos la base de datos en <span style="color:#3e82f7">**Mysql**</span> y luego desde <span style="color:#3e82f7">**TInker**</span> accediendo con `php artisan tinker` con el comando `$productos = factory(App\Productos::class, 10)->create();` creamos 10 datos fake los cuales son mostrados en la pantalla principal en la sección de productos.
+Modificar el nombre del archivo .env.example a .env y luego ejecutar el comando:
+
+`$ php artisan key:generate`
+
+Para los productos se creo inicialmente un controlador y la migracion, luego de definir los campos en la migración se creo un factory para poder generar datos aleatorios. Primero creamos la base de datos en <span style="color:#3e82f7">**Mysql**</span> con el nombre de laika y luego desde <span style="color:#3e82f7">**Tinker**</span> accediendo con `$ php artisan tinker` con el comando `>> $productos = factory(App\Productos::class, 10)->create();` creamos 10 datos fake los cuales son mostrados en la pantalla principal en la sección de productos.
 
 Posteriormente desde la migracion se generaron tres productos con datos sacados de la página de [Laika](http:/https://laika.com.co/city/bog/cat/ "Laika") con los campos de nombre de producto, imagen, precio, precio de miembro, estrellas (calificación), marca, descripción, caracteristicas, beneficios, stock y referencia. Estos campos se usan tanto en la pagina principal con las tarjetas de los productos como en una pagina dinamica enfocada al producto en la cual se basa totalmente de la página de **LAIKA** para hacer uso de todos los datos. para esto solo ejecutamos el comando: 
 
-`php artisan migrate	`
+`$ php artisan migrate	`
 
