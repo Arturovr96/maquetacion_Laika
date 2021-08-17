@@ -47,6 +47,18 @@
                     <img src="img/logo_informacion.png" alt="">
                     <p>Información de producto</p>
                 </div>
+                <div>
+                    <div class="info_botones">
+                        <button id="boton1" class="active" onclick="informacion(1)">Beneficios <i class="fa fa-chevron-down"></i></button>
+                        <button id="boton2" onclick="informacion(2)">Caracteristicas <i class="fa fa-chevron-down"></i></button>
+                        <button id="boton3" onclick="informacion(3)">Descripción <i class="fa fa-chevron-down"></i></button>
+                    </div>
+                    <div class="caja_info">
+                        <p id="beneficios">{{$producto[0]->benefices}}</p>
+                        <p id="caracteristicas" class="none">{{$producto[0]->spects}}</p>
+                        <p id="descripcion" class="none">{{$producto[0]->description}}</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
